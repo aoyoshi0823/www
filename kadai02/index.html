@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホテルページ</title>
+    <style>
+        /*ページ全体 css*/
+        body {
+           margin: 0;
+        }
+
+        /*リセット css*/
+        h1,
+        h2,
+        h3,
+        ul,
+        li,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 100%;
+            background-color: white;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        /*ナビゲーション css*/
+        nav {
+            border-top: 1px solid grey;
+            border-bottom: 1px solid grey;
+        }
+
+        nav ul {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav li {
+            display: inline-block;
+            padding: 5px 12px;
+        }
+
+        nav li a {
+            text-decoration: none;
+        }
+
+        nav a {
+            display: block;
+            /* line-height: 60px; */
+            color: black;
+            text-decoration: none;
+        }
+
+        .robi{
+            margin: 40px;
+           }
+        .robi img{
+            width: 100%;
+            border: 10px solid grey;
+            box-sizing: border-box;
+        }
+
+        /*メインコンテンツ css*/
+        main {
+            padding: 0 40px;
+        }
+        .robi_syoukai h2{
+            font-family: serif;
+            font-weight: normal;
+            text-align: center;
+        }
+        .robi_syoukai_p{
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .syoukai {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .con {
+            width: 31%;
+        }
+
+        .con img {
+            width: 100%;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 28px 0;
+        }
+
+        .news {
+            width: 70%;
+        }
+
+        .newstitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .newstitle p {
+            margin: 0;
+        }
+
+        .banner {
+            width: 30%;
+        }
+        .banner img{
+            width: 100%;
+        }
+
+        .newslist {
+            border-top: 1px dotted grey;
+            list-style: none;
+            padding: 0;
+        }
+
+        .newsitems {
+            border-bottom: 1px dotted gray;
+            padding: 10px 0;
+        }
+
+        .day {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .banner{
+            float: left;
+            width: 30%;
+            padding-top: 30px;
+            padding-left: 10px;
+        }
+        .banner img{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="head_meg">
+            <div class="logo"><img src="images/logo.png" alt="ロゴ"></div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/#">HOME</a>
+                    </li>
+                    <li>
+                        <a href="/#">CONCEPT</a>
+                    </li>
+                    <li>
+                        <a href="/#">STAY</a>
+                    </li>
+                    <li>
+                        <a href="/#">PAGE SAMPLE</a>
+                    </li>
+                    <li>
+                        <a href="/#">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="/#">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="/#">DOWNLOAD</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>   
+        <div class="robi">
+            <img src="images/imag02.png" alt="ホテルロビー">
+        </div>
+    </header>
+    <main>
+        <div class="robi_syoukai">
+            <h2>Stay in a Stylish and Luxurious Design Space.</h2>
+            <p class="robi_syoukai_p">The Scenery, and Location Are Perfect, and the Food Is Excellent. This Resort Hotel Is Dedicated to the Enjoyment of Nature's Bounty and the Pursuit of Fine Cuisine.</p>
+        
+        </div>
+        <div class="syoukai">
+            <div class="con">
+                <img src="images/imag03.png" alt="タオル">
+                <h2>Concept</h2>
+                <p>Stay in stylish and luxurious design space.</p>
+            </div>
+            <div class="con">
+                <img src="images/imag04.png" alt="ベッド">
+                <h2>Hospitality</h2>
+                <p>A true resort life, where the richness of nature heals both body and soul</p>
+            </div>
+            <div class="con">
+                <img src="images/imag05.png" alt="フード">
+                <h2>Reataurant</h2>
+                <p>The hotel is dedicated to enjoyment of nature's bounty and the pursuit of gastronomy.</p>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="news">
+            <div class="newstitle">
+                <h2>News Information</h2>
+
+                <p>Older News</p>
+
+            </div>
+            <ul class="newslist">
+                <li class="newsitems">
+                    <span class="day">2020.12.18</span>
+                    <span>Update information on"LUxE(tcd022)"</span>
+                </li>
+                <li class="newsitems">
+                    <span class="day">2020.09.18</span>
+                    <span>Custom post type"Announcement"is availadle.</span>
+                </li>
+                <li class="newsitems">
+                    <span class="day">2020.08.12</span>
+                    <span>WordPress theme"LUxE(tod022)"is released.</span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="banner">
+            <img src="images/imag01.png" alt="プラン">
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
